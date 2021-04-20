@@ -17,6 +17,9 @@ tools/target_dem_fuzzer.o: tools/target_dem_fuzzer.c
 tools/target_io_dem_fuzzer.o: tools/target_dem_fuzzer.c
 	$(COMPILE_C) -DIO_FLAT=0
 
+tools/target_avut_int_fuzzer.o: tools/target_integer_fuzzer.c
+	$(COMPILE_C) -DIO_FLAT=0
+
 OUTDIRS += tools
 
 clean::
